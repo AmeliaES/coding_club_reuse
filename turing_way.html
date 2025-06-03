@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coding Club - Reusable Code - From The Turing Way</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.6/dist/flatly/bootstrap.min.css"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .container.my-5 {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1>Detailed Recommendations for Code Reuse</h1>
+
+      <p>
+        Make sure you (or somebody else) can re-use your code to do the same
+        exact thing you did. This section contains a simple checklist of
+        recommendations for making your software more reusable. In this section
+        contains a more in-depth explanation of each of these recommendations,
+        with pointers to other relevant parts of this guide.
+      </p>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" id="recommendationsTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="repeatable-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#repeatable"
+            type="button"
+            role="tab"
+            aria-controls="repeatable"
+            aria-selected="true"
+          >
+            Repeatable
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="rerunnable-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#rerunnable"
+            type="button"
+            role="tab"
+            aria-controls="rerunnable"
+            aria-selected="false"
+          >
+            Re-runnable
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="portable-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#portable"
+            type="button"
+            role="tab"
+            aria-controls="portable"
+            aria-selected="false"
+          >
+            Portable
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="extendable-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#extendable"
+            type="button"
+            role="tab"
+            aria-controls="extendable"
+            aria-selected="false"
+          >
+            Extendable & Modifiable
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="exercises-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#exercises"
+            type="button"
+            role="tab"
+            aria-controls="exercises"
+            aria-selected="false"
+          >
+            Exercises
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content mt-3" id="recommendationsTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="repeatable"
+          role="tabpanel"
+          aria-labelledby="repeatable-tab"
+        >
+          <h2>Repeatable Recommendations</h2>
+          <p>
+            At this stage, you might not even need to be able to open the code
+            and read it, you just want to make sure you can re-run all the
+            needed steps and obtain the same results you had.
+          </p>
+          <div id="accordion-container-repeatable"></div>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="rerunnable"
+          role="tabpanel"
+          aria-labelledby="rerunnable-tab"
+        >
+          <h2>Re-runnable recommendations</h2>
+          <p>
+            Make sure you (or others) can re-use it to do the thing you did, but
+            with different data/different parameters
+          </p>
+          <div id="accordion-container-rerunnable"></div>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="portable"
+          role="tabpanel"
+          aria-labelledby="portable-tab"
+        >
+          <h2>Portable Recommendations</h2>
+          <p>
+            Portability refers to the ability to transfer software to a new
+            environment. This could refer to an identical (but not the same)
+            machine, but it can also refer to a new hardware architecture,
+            operating system and such. Both of these are important for software
+            reuse.
+          </p>
+          <div id="accordion-container-portable"></div>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="extendable"
+          role="tabpanel"
+          aria-labelledby="extendable-tab"
+        >
+          <h2>Extendable and Modifiable Recommendations</h2>
+          <p>
+            Make sure others can build on your code to extend it and improve it.
+          </p>
+          <div id="accordion-container-extendable"></div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="exercises"
+          role="tabpanel"
+          aria-labelledby="exercises-tab"
+        >
+          <h2>Exercises</h2>
+          <p>For the rest of the session today have a go at the following:</p>
+          <ol>
+            <li>
+              Open a piece of code that you have been working on recently.
+            </li>
+            <li>
+              Go through each of the points under the tabs. Think about whether
+              your code adheres to each point (some points may be more relevant
+              depending on the purpose of your code).
+            </li>
+            <li>
+              Make a note of points you think could be applied to improve the
+              reusability of your code.
+            </li>
+            <li>
+              Choose one of those points and spend the rest of the time today
+              implementing them to your code. Ask for help if you want.
+            </li>
+          </ol>
+          <p>Some ideas:</p>
+          <ul>
+            <li>
+              Put your code on GitHub. We can help if this is the first time
+              you've used git and GitHub :-)
+            </li>
+            <li>
+              Go through a script that's a bit messy and try and write it in a
+              more modular way with functions. Even just thinking about the
+              logic and how you would break it down if you dont have time to
+              write the functions themselves.
+            </li>
+            <li>
+              Add comments to your code. Think about how you would explain it to
+              someone else.
+            </li>
+            <li>
+              Write a README file for your code. This could be a simple text
+              file that explains what the code does, how to run it, and any
+              dependencies it has.
+            </li>
+            <li>
+              Capture dependendencies, perhaps create a DESCRIPTION file with
+              packages and versions used.
+              <a
+                href="https://coderefinery.github.io/reproducible-research/dependencies/#exercise-0"
+                >Or do the exercise here.</a
+              >
+            </li>
+            <li>Apply a linter to your code.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <div class="container">
+        <p class="mb-0">
+          Web design by Amelia Edmondson-Stait using BootSwatch. Content from
+          <a
+            href="https://book.the-turing-way.org/reproducible-research/code-reuse/code-reuse-details#id-2-make-sure-comments-are-present"
+            >The Turing Way</a
+          >
+          under the
+          <a
+            href="https://github.com/the-turing-way/the-turing-way?tab=License-1-ov-file#readme"
+          >
+            CC-BY licence</a
+          >.
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="turing_way.js"></script>
+  </body>
+</html>
