@@ -88,7 +88,7 @@ const accordionDataRerunnable = [
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/modular-code-development/master/talk.md/#1"
+          href="https://coderefinery.github.io/modular-type-along/"
           >CodeRefinery Modular Code Development lesson</a
         >
       </p>
