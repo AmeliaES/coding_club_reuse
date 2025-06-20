@@ -54,7 +54,7 @@ const accordionDataRepeatable = [
     content: `
       <p>Make sure to specify how you want to be cited when people re-use it.</p>
       <p><strong>See also</strong>:
-        <a href="/communication/citable/citable-cite#cm-citable-cite-software">Citing Software</a>
+        <a href="https://book.the-turing-way.org/communication/citable/citable-cite#cm-citable-cite-software">Citing Software</a>
       </p>
     `,
   },
