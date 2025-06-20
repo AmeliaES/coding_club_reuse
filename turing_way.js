@@ -22,7 +22,7 @@ const accordionDataRepeatable = [
     content: `
       <p>Often the human who set up the environment is also the one who wrote the code and the one who knows the exact order of steps needed to be able to re-run the code and reproduce the results. This could surely be carefully documented for another human to re-do it.</p>
       <p><strong>See also</strong>:
-        <a target="_blank" rel="noreferrer" href="https://coderefinery.github.iohttps://book.the-turing-way.org/reproducible-research//">
+        <a target="_blank" rel="noreferrer" href="https://coderefinery.github.io/reproducible-research/">
           CodeRefinery lesson on Reproducible Research
         </a>
       </p>
